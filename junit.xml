@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./phpunit.xml" tests="13" assertions="27" errors="0" failures="0" skipped="0" time="0.005661">
+    <testsuite name="unit" tests="13" assertions="27" errors="0" failures="0" skipped="0" time="0.005661">
+      <testsuite name="Alura\Leilao\Tests\Model\LeilaoTest" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Model/LeilaoTest.php" tests="4" assertions="9" errors="0" failures="0" skipped="0" time="0.003377">
+        <testsuite name="Alura\Leilao\Tests\Model\LeilaoTest::testLeilaoDeveReceberLances" tests="2" assertions="5" errors="0" failures="0" skipped="0" time="0.003020">
+          <testcase name="testLeilaoDeveReceberLances with data set &quot;leilao-com-2-lances&quot;" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Model/LeilaoTest.php" line="17" class="Alura\Leilao\Tests\Model\LeilaoTest" classname="Alura.Leilao.Tests.Model.LeilaoTest" assertions="3" time="0.002827"/>
+          <testcase name="testLeilaoDeveReceberLances with data set &quot;leilao-com-1-lance&quot;" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Model/LeilaoTest.php" line="17" class="Alura\Leilao\Tests\Model\LeilaoTest" classname="Alura.Leilao.Tests.Model.LeilaoTest" assertions="2" time="0.000194"/>
+        </testsuite>
+        <testcase name="testLeilaoNaoDeveReceberLancesRepetidos" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Model/LeilaoTest.php" line="26" class="Alura\Leilao\Tests\Model\LeilaoTest" classname="Alura.Leilao.Tests.Model.LeilaoTest" assertions="2" time="0.000187"/>
+        <testcase name="testLeilaoNaoDeveAceitarMaisDe5LancesPorUsuario" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Model/LeilaoTest.php" line="38" class="Alura\Leilao\Tests\Model\LeilaoTest" classname="Alura.Leilao.Tests.Model.LeilaoTest" assertions="2" time="0.000169"/>
+      </testsuite>
+      <testsuite name="Alura\Leilao\Tests\Service\AvaliadorTest" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Service/AvaliadorTest.php" tests="9" assertions="18" errors="0" failures="0" skipped="0" time="0.002284">
+        <testsuite name="Alura\Leilao\Tests\Service\AvaliadorTest::testAvaliadorDeveEncontrarOMaiorValorDeLances" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.000923">
+          <testcase name="testAvaliadorDeveEncontrarOMaiorValorDeLances with data set &quot;ordem-crescente&quot;" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Service/AvaliadorTest.php" line="28" class="Alura\Leilao\Tests\Service\AvaliadorTest" classname="Alura.Leilao.Tests.Service.AvaliadorTest" assertions="1" time="0.000498"/>
+          <testcase name="testAvaliadorDeveEncontrarOMaiorValorDeLances with data set &quot;ordem-decrescente&quot;" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Service/AvaliadorTest.php" line="28" class="Alura\Leilao\Tests\Service\AvaliadorTest" classname="Alura.Leilao.Tests.Service.AvaliadorTest" assertions="1" time="0.000252"/>
+          <testcase name="testAvaliadorDeveEncontrarOMaiorValorDeLances with data set &quot;ordem-aleatoria&quot;" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Service/AvaliadorTest.php" line="28" class="Alura\Leilao\Tests\Service\AvaliadorTest" classname="Alura.Leilao.Tests.Service.AvaliadorTest" assertions="1" time="0.000173"/>
+        </testsuite>
+        <testsuite name="Alura\Leilao\Tests\Service\AvaliadorTest::testAvaliadorDeveEncontrarOMenorValorDeLances" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.000477">
+          <testcase name="testAvaliadorDeveEncontrarOMenorValorDeLances with data set &quot;ordem-crescente&quot;" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Service/AvaliadorTest.php" line="42" class="Alura\Leilao\Tests\Service\AvaliadorTest" classname="Alura.Leilao.Tests.Service.AvaliadorTest" assertions="1" time="0.000184"/>
+          <testcase name="testAvaliadorDeveEncontrarOMenorValorDeLances with data set &quot;ordem-decrescente&quot;" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Service/AvaliadorTest.php" line="42" class="Alura\Leilao\Tests\Service\AvaliadorTest" classname="Alura.Leilao.Tests.Service.AvaliadorTest" assertions="1" time="0.000151"/>
+          <testcase name="testAvaliadorDeveEncontrarOMenorValorDeLances with data set &quot;ordem-aleatoria&quot;" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Service/AvaliadorTest.php" line="42" class="Alura\Leilao\Tests\Service\AvaliadorTest" classname="Alura.Leilao.Tests.Service.AvaliadorTest" assertions="1" time="0.000142"/>
+        </testsuite>
+        <testsuite name="Alura\Leilao\Tests\Service\AvaliadorTest::testAvaliadorDeveBuscarOs3MaioresValores" tests="3" assertions="12" errors="0" failures="0" skipped="0" time="0.000885">
+          <testcase name="testAvaliadorDeveBuscarOs3MaioresValores with data set &quot;ordem-crescente&quot;" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Service/AvaliadorTest.php" line="56" class="Alura\Leilao\Tests\Service\AvaliadorTest" classname="Alura.Leilao.Tests.Service.AvaliadorTest" assertions="4" time="0.000244"/>
+          <testcase name="testAvaliadorDeveBuscarOs3MaioresValores with data set &quot;ordem-decrescente&quot;" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Service/AvaliadorTest.php" line="56" class="Alura\Leilao\Tests\Service\AvaliadorTest" classname="Alura.Leilao.Tests.Service.AvaliadorTest" assertions="4" time="0.000313"/>
+          <testcase name="testAvaliadorDeveBuscarOs3MaioresValores with data set &quot;ordem-aleatoria&quot;" file="/home/halan/Área de trabalho/1262-phpunit-aula0-projeto-inicial./tests/Service/AvaliadorTest.php" line="56" class="Alura\Leilao\Tests\Service\AvaliadorTest" classname="Alura.Leilao.Tests.Service.AvaliadorTest" assertions="4" time="0.000327"/>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
