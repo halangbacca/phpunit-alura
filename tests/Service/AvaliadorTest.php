@@ -13,6 +13,7 @@ use function PHPUnit\Framework\assertEquals;
 class AvaliadorTest extends TestCase
 {
 
+    /** @var Avaliador */
     private $leiloeiro;
 
     protected function setUp(): void
@@ -64,6 +65,26 @@ class AvaliadorTest extends TestCase
         assertEquals(120000, $maioresLances[1]->getValor());
         assertEquals(100000, $maioresLances[2]->getValor());
 
+    }
+
+    public function testLeilaoVazioNaoPodeSerAvaliado()
+    {
+        $this->expectException(\DomainException::class);
+        $this->expectExceptionMessage("Não é possível avaliar leilão vazio");
+        $leilao = new Leilao('Fusca');
+        $this->leiloeiro->avalia($leilao);
+    }
+
+    public function testLeilaoFinalizadoNaoPodeSerAvaliado()
+    {
+        $this->expectException(\DomainException::class);
+        $this->expectExceptionMessage('Leilão já finalizado');
+
+        $leilao = new Leilao('Fusca');
+        $leilao->recebeLance(new Lance(new Usuario('Halan'), 2000));
+        $leilao->finaliza();
+
+        $this->leiloeiro->avalia($leilao);
     }
 
     public function leilaoEmOrdemCrescente()
